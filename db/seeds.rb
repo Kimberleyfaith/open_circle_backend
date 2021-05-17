@@ -14,6 +14,6 @@ m2 = Message.create :body => "Why didn't you reply to my text? Well, how am I su
 puts "#{ Message.count } messages created."
 
 Comment.destroy_all
-m1 = Comment.create :content => "Cute doggo!"
-m2 = Comment.create :content => "The best!"
+c1 = Comment.create :content => "Cute doggo!"
+c2 = Comment.create :content => "The best!"
 puts "#{ Comment.count } comments created."
