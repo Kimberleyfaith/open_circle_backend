@@ -59,3 +59,7 @@ p2.likes << l2
 puts "Likes and Users"
 u1.likes << l1
 u2.likes << l2
+
+puts "Comments and Users"
+u1.comments << c1
+u2.comments << c2
