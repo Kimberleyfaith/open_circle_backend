@@ -1,10 +1,10 @@
-class CommentsController < ApplicationRecord
+class CommentsController < ApplicationController
 
   def index
     @comments = Comment.all
     if @comments
       render json: {
-        posts: @comments
+        comments: @comments
       }
     else
       render json: {

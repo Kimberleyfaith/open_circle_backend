@@ -1,10 +1,10 @@
-class CirclesController < ApplicationRecord
+class CirclesController < ApplicationController
 
   def index
     @circles = Circle.all
     if @circles
       render json: {
-        posts: @circles
+        circles: @circles
       }
     else
       render json: {

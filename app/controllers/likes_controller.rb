@@ -1,10 +1,10 @@
-class LikesController < ApplicationRecord
+class LikesController < ApplicationController
 
   def index
     @likes = Like.all
     if @likes
       render json: {
-        posts: @likes
+        likes: @likes
       }
     else
       render json: {

@@ -1,10 +1,10 @@
-class MessagesController < ApplicationRecord
+class MessagesController < ApplicationController
 
   def index
     @messages = Message.all
     if @messages
       render json: {
-        posts: @messages
+        messages: @messages
       }
     else
       render json: {
