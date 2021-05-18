@@ -21,6 +21,8 @@ puts "#{ Comment.count } comments created."
 Circle.destroy_all
 o1 = Circle.create :name => "Friends", :image => "https://pyxis.nymag.com/v1/imgs/986/0a9/fb8617a064d7dee0e01b7335d9769a49ac-23-friends-cover-story-lede-mobile.rvertical.w570.jpg"
 o2 = Circle.create :name => "Colleagues", :image => "https://positiveroutines.com/wp-content/uploads/2018/11/colleagues-with-all-hands-in-teamwork-concept.jpg"
+o3 = Circle.create :name => "Family", :image => "https://content.thriveglobal.com/wp-content/uploads/2019/11/family-.jpg"
+o4 = Circle.create :name => "Fantasy Football", :image => "https://miro.medium.com/max/812/1*t3Yer2tVwRZjfFqXy94jMg.png"
 puts "#{ Circle.count } circles created."
 
 Chatroom.destroy_all
@@ -41,8 +43,8 @@ u1.messages << m1
 u2.messages << m2
 
 puts "Circles and Users"
-u1.circles << o1
-u2.circles << o2
+u1.circles << o1 << o3
+u2.circles << o2 << o4
 
 puts "Messages and Chatrooms"
 r1.messages << m1
