@@ -4,7 +4,7 @@ class ChatroomsController < ApplicationController
     @chatrooms = Chatroom.all
     if @chatrooms
       render :json => @chatrooms
-      }
+      
     else
       render json: {
         status: 500,

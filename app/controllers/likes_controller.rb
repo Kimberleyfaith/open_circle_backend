@@ -4,7 +4,7 @@ class LikesController < ApplicationController
     @likes = Like.all
     if @likes
       render :json => @likes
-      }
+      
     else
       render json: {
         status: 500,
