@@ -1,12 +1,10 @@
 class CirclesController < ApplicationController
 
-require 'pry'
-
   def index
     @circles = @current_user.circles
     if @circles
       render :json => @circles
-      
+
     else
       render json: {
         status: 500,
