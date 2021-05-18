@@ -53,7 +53,7 @@ class CirclesController < ApplicationController
         format.json { render json: @circle.errors, status: :unprocessable_entity }
       end
     end
-
+    
     def destroy
       @circle.destroy
       respond_to do |format|
