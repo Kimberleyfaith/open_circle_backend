@@ -3,8 +3,7 @@ class ChatroomsController < ApplicationController
   def index
     @chatrooms = Chatroom.all
     if @chatrooms
-      render json: {
-        chatrooms: @chatrooms
+      render :json => @chatrooms
       }
     else
       render json: {

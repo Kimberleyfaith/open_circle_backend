@@ -3,8 +3,8 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all
     if @messages
-      render json: {
-        messages: @messages
+      render :json => @messages
+
       }
     else
       render json: {
