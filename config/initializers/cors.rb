@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3000', 'https://faithsylvia1.github.io/open_circle_frontend'
+    origins 'localhost:3000', 'faithsylvia1.github.io'
 
     resource '*',
       headers: :any,
