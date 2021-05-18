@@ -38,6 +38,10 @@ puts "Posts and Users"
 u1.posts << p1
 u2.posts << p2
 
+puts "Posts and Circles"
+o1.posts << p1
+o2.posts << p2
+
 puts "Messages and Users"
 u1.messages << m1
 u2.messages << m2
