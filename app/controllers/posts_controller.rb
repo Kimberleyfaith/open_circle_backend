@@ -3,9 +3,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     if @posts
-      render json: {
-        posts: @posts
-      }
+      render :json => @posts, :include => [:user]
     else
       render json: {
         status: 500,
