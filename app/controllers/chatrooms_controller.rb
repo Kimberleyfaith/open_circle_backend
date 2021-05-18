@@ -3,9 +3,8 @@ class ChatroomsController < ApplicationController
   def index
     @circles = @current_user.chatrooms
     if @chatrooms
-      render json: {
-        chatrooms: @chatrooms
-      }
+      render :json => @chatrooms
+      
     else
       render json: {
         status: 500,

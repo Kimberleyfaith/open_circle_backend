@@ -3,9 +3,8 @@ class CommentsController < ApplicationController
   def index
     @comments = Comment.all
     if @comments
-      render json: {
-        comments: @comments
-      }
+      render :json => @comments
+      
     else
       render json: {
         status: 500,

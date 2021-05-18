@@ -3,9 +3,8 @@ class LikesController < ApplicationController
   def index
     @likes = Like.all
     if @likes
-      render json: {
-        likes: @likes
-      }
+      render :json => @likes
+      
     else
       render json: {
         status: 500,
