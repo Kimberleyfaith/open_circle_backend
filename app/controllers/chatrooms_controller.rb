@@ -1,7 +1,7 @@
 class ChatroomsController < ApplicationController
 
   def index
-    @chatrooms = Chatroom.all
+    @circles = @current_user.chatrooms
     if @chatrooms
       render json: {
         chatrooms: @chatrooms
