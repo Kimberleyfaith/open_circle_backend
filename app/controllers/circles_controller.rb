@@ -1,11 +1,11 @@
 class CirclesController < ApplicationController
 
+require 'pry'
+
   def index
-    @circles = Circle.all
+    @circles = @current_user.circles
     if @circles
-      render json: {
-        circles: @circles
-      }
+      render :json => @circles
     else
       render json: {
         status: 500,
@@ -53,7 +53,7 @@ class CirclesController < ApplicationController
         format.json { render json: @circle.errors, status: :unprocessable_entity }
       end
     end
-    
+
     def destroy
       @circle.destroy
       respond_to do |format|
