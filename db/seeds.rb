@@ -51,8 +51,8 @@ u1.posts << p1
 u2.posts << p2
 
 puts "Posts and Circles"
-o1.posts << p1
-o2.posts << p2
+o1.posts << p1 << p3 << p5
+o2.posts << p2 << p4 << p6
 
 puts "Messages and Users"
 u1.messages << m1
@@ -61,6 +61,10 @@ u2.messages << m2
 puts "Circles and Users"
 u1.circles << o1 << o3
 u2.circles << o2 << o4
+u3.circles << o1 << o2
+u4.circles << o2
+u5.circles << o3 << o4
+u6.circles << o4
 
 puts "Messages and Chatrooms"
 r1.messages << m1
