@@ -27,6 +27,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rack-cors'
 
+gem "rails_same_site_cookie"
+
 gem 'pry-rails'
 
 # Use Capistrano for deployment
