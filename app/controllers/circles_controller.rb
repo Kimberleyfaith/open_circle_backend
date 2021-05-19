@@ -1,7 +1,7 @@
 class CirclesController < ApplicationController
 
   def index
-    @user = User.find params[:id]
+    @user = User.find params[:user_id]
     @circles = @user.circles
     if @circles
       render :json => @circles
