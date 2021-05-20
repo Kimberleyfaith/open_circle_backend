@@ -81,9 +81,9 @@ puts "#{ Comment.count } comments created."
 
 Circle.destroy_all
 o1 = Circle.create :name => "Friends", :image => "https://pyxis.nymag.com/v1/imgs/986/0a9/fb8617a064d7dee0e01b7335d9769a49ac-23-friends-cover-story-lede-mobile.rvertical.w570.jpg"
-o2 = Circle.create :name => "Colleagues", :image => "https://positiveroutines.com/wp-content/uploads/2018/11/colleagues-with-all-hands-in-teamwork-concept.jpg"
+o2 = Circle.create :name => "Colleagues", :image => "https://cdn.iconscout.com/icon/premium/png-256-thumb/colleagues-1488456-1259793.png"
 o3 = Circle.create :name => "Family", :image => "https://content.thriveglobal.com/wp-content/uploads/2019/11/family-.jpg"
-o4 = Circle.create :name => "Fantasy Football", :image => "https://miro.medium.com/max/812/1*t3Yer2tVwRZjfFqXy94jMg.png"
+o4 = Circle.create :name => "Fantasy Football", :image => "https://libertaswealth.com/wp-content/uploads/2015/10/Oct-7-NFL-Fantasy-Logo.png"
 puts "#{ Circle.count } circles created."
 o5 = Circle.create :name => "GA", :image => "https://alternative.me/media/256/general-assembly-icon-x2m5g8apyi7lhrkv-c.png"
 
@@ -135,13 +135,13 @@ u1.messages << m1
 u2.messages << m2
 
 puts "Circles and Users"
-  u1.circles << o1 << o3 << o5
-  u2.circles << o2 << o4 << o5
-  u3.circles << o1 << o2 << o5
-  u4.circles << o2 << o5
-  u5.circles << o3 << o5
-  u6.circles << o4 << o5
-  u7.circles << o5
+u1.circles << o1 << o3 << o5
+u2.circles << o2 << o4 << o5
+u3.circles << o1 << o2 << o5
+u4.circles << o2 << o5
+u5.circles << o3 << o5
+u6.circles << o4 << o5
+u7.circles << o5
 u8.circles << o2
 u9.circles << o1
 u10.circles << o3
