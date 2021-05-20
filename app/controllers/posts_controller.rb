@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    @posts = Post.where(circle_id: params[:circle_id])
     if @posts
       render :json => @posts, :include => [:user]
     else
