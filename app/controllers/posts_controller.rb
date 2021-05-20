@@ -29,6 +29,7 @@ class PostsController < ApplicationController
 
   def create
     puts "CREATE METHOD TRIGGERED"
+    puts post_params
     @post = Post.new post_params
     if @post.save
       render json: {
@@ -66,7 +67,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:image, :content, :likes, :user_id)
+    params.require(:post).permit(:image, :content, :likes, :user_id, :circle_id)
   end
 
 end
