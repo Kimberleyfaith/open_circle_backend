@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.where(circle_id: params[:circle_id]) 
+    @posts = Post.where(circle_id: params[:circle_id])
     if @posts
       render :json => @posts, :include => [:user]
     else
@@ -35,7 +35,7 @@ class PostsController < ApplicationController
       }
     else
       render json: {
-        status: 500,
+        status: 69,
         errors: ['error: post not created']
       }
     end
