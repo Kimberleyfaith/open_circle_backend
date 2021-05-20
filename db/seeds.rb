@@ -20,13 +20,13 @@ Post.destroy_all
 p1 = Post.create :images => ["https://i.pinimg.com/236x/25/67/b4/2567b4e6686326e5b39eb5e1ed149033--puppy-play-puppy-love.jpg"], :content => "Meet Baxter"
 p2 = Post.create :images => ["https://i.redd.it/h3lqd6s7co6z.jpg"], :content => "...and meet Nala"
 puts "#{ Post.count } posts created."
-p3 = Post.create :images => ["https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2018/08/16/5b75cf1bff703d43abd41945_Justin-Thomas-takeaway.jpg"],  :content => "Prep work is done, it is go time!"
+p3 = Post.create :images => ["https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2018/08/16/5b75cf1bff703d43abd41945_Justin-Thomas-takeaway.jpg"], :content => "Prep work is done, it is go time!"
 puts "#{ Post.count } posts created."
 p4 = Post.create :images => ["https://www.sportbible.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.sportbible.com%2Fs3%2Fcontent%2Fab93c5a45fdab82dbed9aad825bbcf7d.png"], :content => "A bit sweaty and a bit tired but smiles on faces"
 puts "#{ Post.count } posts created."
 p5 = Post.create :content => "Congratulations on your engagement!"
 puts "#{ Post.count } posts created."
-p6 = Post.create :content => "Happy Birthday!"
+p6 = Post.create :image => ["https://cdn.greenvelope.com/blog/wp-content/uploads/happy-birthday-cake.jpeg"], :content => "Happy Birthday!"
 puts "#{ Post.count } posts created."
 p7 = Post.create :content => "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are."
 puts "#{ Post.count } posts created."
@@ -44,13 +44,13 @@ p13 = Post.create :content => "I’m not good at the advice. Can I interest you 
 puts "#{ Post.count } posts created."
 p14 = Post.create :content => "Never do anything out of hunger. Not even eating."
 puts "#{ Post.count } posts created."
-p15 = Post.create :content => "Why do they call it rush hour when nothing moves?"
+p15 = Post.create :image => ["https://i.imgur.com/EzwA7hO.jpg"], :content => "Why do they call it rush hour when nothing moves?"
 puts "#{ Post.count } posts created."
 p16 = Post.create :content => " grew up with six brothers. That’s how I learned to dance: waiting for the bathroom."
 puts "#{ Post.count } posts created."
 p17 = Post.create :content => "When someone says they have to ask you a question, you think of all the bad things you've done recently."
 puts "#{ Post.count } posts created."
-p18 = Post.create :content => "Balloons are so weird: Happy birthday, here's a plastic sack of my breath."
+p18 = Post.create :image ["https://melbournepartyballoons.com.au/wp-content/uploads/BalloonBorder-1.jpg"], :content => "Balloons are so weird: Happy birthday, here's a plastic sack of my breath."
 puts "#{ Post.count } posts created."
 p19 = Post.create :content => "Have you ever noticed that it's impossible to make pinching your elbow hurt?"
 puts "#{ Post.count } posts created."
@@ -62,7 +62,7 @@ p22 = Post.create :content => "Sarcasm is a body’s natural defense against stu
 puts "#{ Post.count } posts created."
 p23 = Post.create :content => "I'm actually really nice, until you annoy me."
 puts "#{ Post.count } posts created."
-p24 = Post.create :content => "Basketball hoop for sale. Son not as athletic as I hoped. Must pick up."
+p24 = Post.create :image => ["https://i.pinimg.com/originals/19/06/c5/1906c5ea141a8a3b3643f7fb8c4efc66.jpg"], :content => "Basketball hoop for sale. Son not as athletic as I hoped. Must pick up."
 puts "#{ Post.count } posts created."
 p25 = Post.create :content => "Remember when the biggest problem we faced was Gangnam Style"
 puts "#{ Post.count } posts created."
@@ -85,7 +85,7 @@ o2 = Circle.create :name => "Colleagues", :image => "https://positiveroutines.co
 o3 = Circle.create :name => "Family", :image => "https://content.thriveglobal.com/wp-content/uploads/2019/11/family-.jpg"
 o4 = Circle.create :name => "Fantasy Football", :image => "https://miro.medium.com/max/812/1*t3Yer2tVwRZjfFqXy94jMg.png"
 puts "#{ Circle.count } circles created."
-o5 = Circle.create :name => "GA", :image => "https://atlantaservicejam.files.wordpress.com/2016/02/general-assembly-logo-600.gif"
+o5 = Circle.create :name => "GA", :image => "https://alternative.me/media/256/general-assembly-icon-x2m5g8apyi7lhrkv-c.png"
 
 Chatroom.destroy_all
 r1 = Chatroom.create :title => "The Four Lokos"
@@ -135,13 +135,13 @@ u1.messages << m1
 u2.messages << m2
 
 puts "Circles and Users"
-  u1.circles << o1 << o3 << o5
-  u2.circles << o2 << o4 << o5
-  u3.circles << o1 << o2 << o5
-  u4.circles << o2 << o5
-  u5.circles << o3 << o5
-  u6.circles << o4 << o5
-  u7.circles << o5
+u1.circles << o1 << o3 << o5
+u2.circles << o2 << o4 << o5
+u3.circles << o1 << o2 << o5
+u4.circles << o2 << o5
+u5.circles << o3 << o5
+u6.circles << o4 << o5
+u7.circles << o5
 u8.circles << o2
 u9.circles << o1
 u10.circles << o3
