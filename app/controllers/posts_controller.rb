@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    puts "CREATE METHOD TRIGGERED"
     @post = Post.new(post_params)
     if @post.save
       render json: {
@@ -35,7 +36,7 @@ class PostsController < ApplicationController
       }
     else
       render json: {
-        status: 69,
+        status: 500,
         errors: ['error: post not created']
       }
     end
