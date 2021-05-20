@@ -1,11 +1,9 @@
 class UsersController < ApplicationController
 
   def index
-    circle = Circle.find params[:circle_id]
-    @users = circle.users
+    @users = User.all
     if @users
       render :json => @users
-
     else
       render json: {
         status: 500,
