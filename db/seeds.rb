@@ -20,7 +20,7 @@ Post.destroy_all
 p1 = Post.create :images => ["https://i.pinimg.com/236x/25/67/b4/2567b4e6686326e5b39eb5e1ed149033--puppy-play-puppy-love.jpg"], :content => "Meet Baxter"
 p2 = Post.create :images => ["https://i.redd.it/h3lqd6s7co6z.jpg"], :content => "...and meet Nala"
 puts "#{ Post.count } posts created."
-p3 = Post.create :images => ["https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2018/08/16/5b75cf1bff703d43abd41945_Justin-Thomas-takeaway.jpg"], :content => "Prep work is done, it is go time!"
+p3 = Post.create :images => ["https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2018/08/16/5b75cf1bff703d43abd41945_Justin-Thomas-takeaway.jpg"],  :content => "Prep work is done, it is go time!"
 puts "#{ Post.count } posts created."
 p4 = Post.create :images => ["https://www.sportbible.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.sportbible.com%2Fs3%2Fcontent%2Fab93c5a45fdab82dbed9aad825bbcf7d.png"], :content => "A bit sweaty and a bit tired but smiles on faces"
 puts "#{ Post.count } posts created."
@@ -50,7 +50,7 @@ p16 = Post.create :content => " grew up with six brothers. That’s how I learne
 puts "#{ Post.count } posts created."
 p17 = Post.create :content => "When someone says they have to ask you a question, you think of all the bad things you've done recently."
 puts "#{ Post.count } posts created."
-p18 = Post.create :images ["https://melbournepartyballoons.com.au/wp-content/uploads/BalloonBorder-1.jpg"], :content => "Balloons are so weird: Happy birthday, here's a plastic sack of my breath."
+p18 = Post.create :images => ["https://melbournepartyballoons.com.au/wp-content/uploads/BalloonBorder-1.jpg"], :content => "Balloons are so weird: Happy birthday, here's a plastic sack of my breath."
 puts "#{ Post.count } posts created."
 p19 = Post.create :content => "Have you ever noticed that it's impossible to make pinching your elbow hurt?"
 puts "#{ Post.count } posts created."
@@ -135,13 +135,13 @@ u1.messages << m1
 u2.messages << m2
 
 puts "Circles and Users"
-u1.circles << o1 << o3 << o5
-u2.circles << o2 << o4 << o5
-u3.circles << o1 << o2 << o5
-u4.circles << o2 << o5
-u5.circles << o3 << o5
-u6.circles << o4 << o5
-u7.circles << o5
+  u1.circles << o1 << o3 << o5
+  u2.circles << o2 << o4 << o5
+  u3.circles << o1 << o2 << o5
+  u4.circles << o2 << o5
+  u5.circles << o3 << o5
+  u6.circles << o4 << o5
+  u7.circles << o5
 u8.circles << o2
 u9.circles << o1
 u10.circles << o3
