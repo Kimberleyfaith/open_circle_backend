@@ -26,7 +26,7 @@ p4 = Post.create :images => ["https://www.sportbible.com/cdn-cgi/image/width=720
 puts "#{ Post.count } posts created."
 p5 = Post.create :content => "Congratulations on your engagement!"
 puts "#{ Post.count } posts created."
-p6 = Post.create :image => ["https://cdn.greenvelope.com/blog/wp-content/uploads/happy-birthday-cake.jpeg"], :content => "Happy Birthday!"
+p6 = Post.create :images => ["https://cdn.greenvelope.com/blog/wp-content/uploads/happy-birthday-cake.jpeg"], :content => "Happy Birthday!"
 puts "#{ Post.count } posts created."
 p7 = Post.create :content => "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are."
 puts "#{ Post.count } posts created."
