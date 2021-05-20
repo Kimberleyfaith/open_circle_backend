@@ -1,6 +1,6 @@
 User.destroy_all
 u1 = User.create :name => "Joel Turnbull", :email => "joel@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/236x/1b/f1/ff/1bf1ff9e52d42ee99d679afdf7baf202--funny-face-pics-funny-baby-faces.jpg", :cover_image => "https://www.shell.com/energy-and-innovation/the-energy-future/scenarios/shell-scenario-sky/_jcr_content/pagePromo/image.img.960.jpeg/1548184031017/clear-blue-sky.jpeg", :bio => "Exhale the bullsh*t!", :birthday => "1982-07-15", :location => "Sydney"
-u2 = User.create :name => "Mai Nguyen", :email => "mai@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/originals/29/3f/f8/293ff8faf8eccb20f7f44636fd82dba3.jpg", :cover_image => "https://resilientblog.co/wp-content/uploads/2019/07/sky-quotes.jpg", :bio => "Everyone is normal until you add them as your Facebook friend", :birthday => "1990-12-01", :location => "London"
+u2 = User.create :name => "Mai Nguyen", :email => "mai@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/originals/29/3f/f8/293ff8faf8eccb20f7f44636fd82dba3.jpg", :cover_image => "https://resilientblog.co/wp-content/uploads/2019/07/sky-quotes.jpg", :bio => "Everyone is normal until you add them as your social media friend", :birthday => "1990-12-01", :location => "London"
 u3 = User.create :name => "Faith Sylvia", :email => "faith@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/474x/98/bd/8b/98bd8beef5548efcfc810d8f4341fea9.jpg", :cover_image => "https://i.pinimg.com/originals/6b/c3/19/6bc319faa3cbbcfc5d98a740a908aaa7.jpg", :bio => "Sassy, classy, and bad-assy.", :birthday => "1993-01-20", :location => "New Hampshire"
 u4 = User.create :name => "Chris Johnson", :email => "chris@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/originals/af/ea/b3/afeab3e94a4627072c290221eb6f35c0.jpg", :cover_image => "https://wallpaperaccess.com/full/338765.jpg", :bio => "I wish common sense was common.", :birthday => "1990-09-25", :location => "Sydney"
 u5 = User.create :name => "David Johnson", :email => "david@ga.co", :password => "chicken", :profile_image => "https://i.pinimg.com/564x/e2/51/9e/e2519e62a7ee2a6504d7e389f2f6c14e.jpg", :cover_image => "https://c.tadst.com/gfx/750w/barcelona-morning-sky.jpg?1", :bio => "Weekend, please don’t leave me.", :birthday => "1992-12-10", :location => "Florida"
@@ -119,37 +119,37 @@ u9.posts << p13 << p23
 u10.posts << p14
 u11.posts << p15
 u12.posts << p15 << p24 << p25 << p26
-u12.posts << p16
+u13.posts << p16
 u14.posts << p17
 u15.posts << p18
 
 puts "Posts and Circles"
-o1.posts << p18
-o2.posts << p5
-o3.posts << p3
-o4.posts << p4
-o5.posts << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 << p12 << p13 << p14 << p15 << p16 << p17 << p18 << p19 << p20 << p21 << p22 << p23 << p24 << p25 << p26
+o1.posts << p1 << p2 << p3 << p4 << p5
+o2.posts << p6 << p19 << p7 << p20 << p8 << p21 << p22 << p12 << p16
+o3.posts << p1 << p2 << p3 << p4 << p5 << p9 << p14
+o4.posts << p6 << p19 << p10 << p15 << p24 << p25 << p26
+o5.posts << p1 << p2 << p3 << p4 << p5 << p6 << p19 << p7 << p20 << p8 << p21 << p22 << p9 << p10 << p11
 
 puts "Messages and Users"
 u1.messages << m1
 u2.messages << m2
 
 puts "Circles and Users"
-u1.circles << o1 << o3 << o5
-u2.circles << o2 << o4 << o5
-u3.circles << o1 << o2 << o5
-u4.circles << o2 << o5
-u5.circles << o3 << o4 << o5
-u6.circles << o4 << o2 << o5
-u7.circles << o5
-u8.circles << o5 << o2
-u9.circles << o5 << o1
-u10.circles << o5 << o3
-u11.circles << o5
-u12.circles << o5 << o3
-u13.circles << o5
-u14.circles << o5 << o3
-u15.circles << o5 << o1
+  u1.circles << o1 << o3 << o5
+  u2.circles << o2 << o4 << o5
+  u3.circles << o1 << o2 << o5
+  u4.circles << o2 << o5
+  u5.circles << o3 << o5
+  u6.circles << o4 << o5
+  u7.circles << o5
+u8.circles << o2
+u9.circles << o1
+u10.circles << o3
+u11.circles << o1
+u12.circles << o4
+u13.circles << o2
+u14.circles << o3
+u15.circles << o4
 
 
 puts "Messages and Chatrooms"
