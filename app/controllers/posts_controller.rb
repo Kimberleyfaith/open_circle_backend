@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    @posts = Post.where(circle_id: params[:circle_id]) 
     if @posts
       render :json => @posts, :include => [:user]
     else
@@ -62,7 +62,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:image, :content, :likes)
+    params.require(:post).permit(:image, :content, :likes, :user_id)
   end
 end
 end
