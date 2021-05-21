@@ -142,14 +142,14 @@ puts "Circles and Users"
   u5.circles << o3 << o5
   u6.circles << o4 << o5
   u7.circles << o5
-u8.circles << o2
-u9.circles << o1
-u10.circles << o3
-u11.circles << o1
-u12.circles << o4
-u13.circles << o2
-u14.circles << o3
-u15.circles << o4
+  u8.circles << o2
+  u9.circles << o1
+  u10.circles << o3
+  u11.circles << o1
+  u12.circles << o4
+  u13.circles << o2
+  u14.circles << o3
+  u15.circles << o4
 
 
 puts "Messages and Chatrooms"

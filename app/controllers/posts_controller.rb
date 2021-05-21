@@ -1,10 +1,12 @@
+require 'pry'
+
 class PostsController < ApplicationController
 
   def index
     # @posts = Post.all
-    @posts = (Post.where(circle_id: params[:circle_id])).reverse()
-    if @posts
-      render :json => @posts, :include => [:user]
+    @posts_return = (Post.where(circle_id: params[:circle_id])).order("created_at DESC")
+    if @posts_return
+      render :json => @posts_return, :include => [:user]
     else
       render json: {
         status: 500,
